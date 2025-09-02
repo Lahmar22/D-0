@@ -1,25 +1,16 @@
 #include <stdio.h>
 
 int main(){
-    int n ; 
-    int fac=1;
+    float tmpr ;
+    float Kelvin =0.0;
 
-    printf("entrez un number svp : ");
-    scanf("%d",&n);
+    printf("entrez la température en Celsius");
+    scanf("%f",&tmpr);
 
-    if (n !=0) {
-        for (int i =1; i<=n; i++) {
-            fac = fac*i;
-        }
-        printf("la factorielle de  %d est : %d",n,fac);
-    
-    }else {
-        printf("nomber est null");
-    
-    }
-    
-    
-    
+    Kelvin = tmpr + 273.15 ;
+
+    printf("la température en Celsius et la transforme en Kelvin est : %.2f",Kelvin);
+
 
 }
 

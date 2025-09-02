@@ -1,21 +1,23 @@
 #include <stdio.h>
+
 int main(){
+    float temperature ;
+
+    printf("entrez la température en Celsius : ");
+    scanf("%f",&temperature);
+    if (temperature<0) {
+        printf("Solide");
     
-    int base,exposant;
-    int result=1;
-
-    printf("entrez un number sbase : ");
-    scanf("%d",&base);
-    printf("entrez un number exposant : ");
-    scanf("%d",&exposant);
-
-    for (int i =0; i<exposant; i++) {
-        result = result * base;
+    }else if (temperature<100) {
+        printf("Liquide");
+    
+    }else {
+        printf("Gaz");
     
     }
-    printf("result de %d ^ %d = %d",base,exposant,result);
+
+
     
-   
+
 
 }
-

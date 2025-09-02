@@ -1,16 +1,15 @@
 #include <stdio.h>
 
 int main(){
-    int n;
-    
+    float vitesse ;
+    float seconde =0.0;
 
-    printf("entrez un number svp : ");
-    scanf("%d",&n);
-    for (int i=1; i<=n; i++) {
-        printf("%d \n",2*i-1);
-        
-    }
-    
+    printf("entrez la vitesse en kilomètres par heure (km/h) : ");
+    scanf("%f",&vitesse);
+
+    seconde = vitesse * 0.27778 ;
+
+    printf("la vitesse en kilomètres par heure (km/h) transforme en mètres par seconde (m/s) est : %.2f",seconde);
+
 
 }
-

@@ -1,17 +1,15 @@
 #include <stdio.h>
 
 int main(){
-    int n;
-    int somme = 0;
+    float distance ;
+    float Yards =0.0;
 
-    printf("entrez un number svp : ");
-    scanf("%d",&n);
+    printf("entrez la distance en kilomètres");
+    scanf("%f",&distance);
 
-    for (int i =0; i<=n; i++) {
-        somme = somme+i;
-    
-    }
-    printf("la somme de %d est %d ",n,somme);
+    Yards = distance * 1093.61 ;
+
+    printf("la distance en kilomètres transforme en yards est : %.2f",Yards);
+
 
 }
-
